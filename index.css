@@ -1,0 +1,97 @@
+/*____Global____*/
+:root {
+  /*Primary*/
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+
+  /*Neutral*/
+  --darkGray: hsl(0, 0%, 59%);
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--darkCyan);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position-x: -25vw, 75vw;
+  background-position-y: -50vh, 50vh;
+}
+/*____Card____*/
+.card {
+  border-radius: 20px;
+  width: 375px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+}
+.card-bg {
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 140px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+img {
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: solid 5px white;
+}
+.name {
+  padding-top: 4.5em;
+}
+.name h1,
+.name .age {
+  display: inline;
+}
+h1 {
+  font-size: larger;
+}
+hr {
+  border-top: 0 solid grey;
+}
+.bold {
+  font-weight: bold;
+  color: black;
+  margin: 1em 1em 0.5em;
+}
+.d-p {
+  font-size: small;
+  margin: 0.5em;
+}
+p {
+  color: var(--darkGray);
+}
+p.age {
+  font-size: larger;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+}
+
+/*____Footer____*/
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  margin: auto;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
